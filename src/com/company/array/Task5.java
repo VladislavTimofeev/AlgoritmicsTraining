@@ -18,8 +18,8 @@ public class Task5 {
     public static void printSomeElementsArray(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i]>i){
-                System.out.println(array[i]);
+            if (array[i] > i) {
+                Util.print(String.valueOf(array[i]));
             }
         }
     }
