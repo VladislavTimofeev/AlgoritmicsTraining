@@ -3,6 +3,10 @@ package com.company.array;
 // На каждое задание новый файл
 // использовать util для вывода на экран
 
+import com.company.util.Util;
+
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -86,12 +90,18 @@ public class Main {
 //        int[] num = Task8.createNewArrayRemoveMinElements(array);
 //        Util.print(Arrays.toString(num));
 
-        int[] array = new int[]{2, 2, 9, 7, 0, 1, 4, 7, 3, 7, 2, 7};
+//        int[] array = new int[]{2, 2, 9, 7, 0, 1, 4, 7, 3, 7, 2, 7};
+//
+//        int result = Task9.findFrequentNumber(array);
+//
+//        System.out.println(result);
 
-        int result = Task9.findFrequentNumber(array);
+        int[] array = new int[]{4, 8, 0, 2, 5, 3, 1, 7, 10, 12};
 
-        System.out.println(result);
-
+        int[] result = Task10.ShrinkArrayRemoveSecondElements(array);
+        for (int element : result){
+            Util.print(String.valueOf(element));
+        }
 
     }
 }
