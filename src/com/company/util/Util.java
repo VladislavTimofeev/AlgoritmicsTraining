@@ -13,6 +13,10 @@ public final class Util {
         System.out.println(line);
     }
 
+    public static void print(int value){
+        print(String.valueOf(value));
+    }
+
     public static int scanInt(String message) {
         int result;
         while (true) {
