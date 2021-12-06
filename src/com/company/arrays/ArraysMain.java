@@ -7,11 +7,11 @@ public class ArraysMain {
     public static void main(String[] args) {
 
         int[][] matrix = new int[][]{
-                {10, 6, 8, 5, 7},
-                {5, 7, 8, 9, 4},
-                {6, 0, 7, 8, 11},
-                {5, 7, 2, 7, 0},
-                {8, 4, 2, 1, 7}
+                {-10, 6, 8, 5, 7},
+                {5, -7, 8, 9, 4},
+                {6, 0, -7, 8, 11},
+                {5, 7, 2, -7, 0},
+                {8, 4, 2, 1, 8}
         };
         //double[][] matrix = new double[4][4];
 
@@ -24,14 +24,16 @@ public class ArraysMain {
         //Task7.createMatrixByRule(matrix,4);
         //int findElements = Task7.findPositiveElements(matrix);
         //Util.print(findElements);
-        Task8.changePlaceColumns(matrix);
+        //Task8.changePlaceColumns(matrix);
+        //Task9.findSumEveryColumn(matrix);
+        Task10.findPositiveElementsByDiagonal(matrix);
 
-        for (int[] mat : matrix){
-            for (int ma : mat){
-                System.out.print(ma + "\t");
-            }
-            System.out.println();
-        }
+//        for (int[] mat : matrix){
+//            for (int ma : mat){
+//                System.out.print(ma + "\t");
+//            }
+//            System.out.println();
+//        }
 
     }
 
