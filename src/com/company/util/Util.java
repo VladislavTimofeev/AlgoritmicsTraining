@@ -13,7 +13,7 @@ public final class Util {
         System.out.println(line);
     }
 
-    public static void print(int value){
+    public static void print(int value) {
         print(String.valueOf(value));
     }
 
@@ -45,6 +45,16 @@ public final class Util {
 
     private static String getString() {
         return scanner.nextLine();
+    }
+
+    public static void printArray2D(int[][] matrix) {
+
+        for (int[] mat : matrix) {
+            for (int ma : mat) {
+                System.out.print(ma + "\t");
+            }
+            System.out.println();
+        }
     }
 
 }

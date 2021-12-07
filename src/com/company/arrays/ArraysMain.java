@@ -1,19 +1,21 @@
 package com.company.arrays;
 
 import com.company.util.Util;
+import javafx.concurrent.Task;
 
 public class ArraysMain {
 
     public static void main(String[] args) {
 
-        int[][] matrix = new int[][]{
-                {-10, 6, 8, 5, 7},
-                {5, -7, 8, 9, 4},
-                {6, 0, -7, 8, 11},
-                {5, 7, 2, -7, 0},
-                {8, 4, 2, 1, 8}
-        };
-        //double[][] matrix = new double[4][4];
+//        int[][] matrix = new int[][]{
+//                {-10, 6, 8, 5, 7},
+//                {5, -7, 8, 9, 4},
+//                {6, 0, -7, 8, 11},
+//                {5, 7, 2, -7, 0},
+//                {8, 4, 2, 1, 8}
+//        };
+
+        int[][] matrix = new int[10][20];
 
         //Task1.printOddColumnsFirstMoreLast(matrix);
         //Task2.printDiagonalElements(matrix);
@@ -26,14 +28,11 @@ public class ArraysMain {
         //Util.print(findElements);
         //Task8.changePlaceColumns(matrix);
         //Task9.findSumEveryColumn(matrix);
-        Task10.findPositiveElementsByDiagonal(matrix);
+        //Task10.findPositiveElementsByDiagonal(matrix);
+        Task11.createMatrixByRandom(matrix);
 
-//        for (int[] mat : matrix){
-//            for (int ma : mat){
-//                System.out.print(ma + "\t");
-//            }
-//            System.out.println();
-//        }
+        Util.printArray2D(matrix);
+        Task11.findNumberInLine(matrix);
 
     }
 
