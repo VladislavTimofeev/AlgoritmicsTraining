@@ -31,6 +31,20 @@ public final class Util {
         }
     }
 
+    public static double scanDouble(String message) {
+        double result;
+        while (true) {
+            print(message);
+            String input = getString();
+            try {
+                result = Double.parseDouble(input);
+                return result;
+            } catch (NumberFormatException ex) {
+                print("Неверный Ввод");
+            }
+        }
+    }
+
     public static String scanString(String message) {
         while (true) {
             print(message);
